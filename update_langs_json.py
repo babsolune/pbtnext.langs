@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Générateur de langs.json pour le serveur de téléchargement PHPBoost.
+langs.json generator
 """
 
 import json
@@ -37,10 +37,6 @@ def generate_langs_json(addons_dir: str) -> list:
         if not config or config.get("addon_type") != "lang":
             continue
 
-        thumbnail = ""
-        if os.path.isfile(os.path.join(addon_path, "flag.png")):
-            thumbnail = "flag.png"
-
         entries.append({
             "id":            addon_id,
             "addon_type":    config.get("addon_type",    "lang"),
@@ -53,7 +49,6 @@ def generate_langs_json(addons_dir: str) -> list:
             "last_update":   config.get("last_update",   ""),
             "identifier":    config.get("identifier",    ""),
             "name":          config.get("name",          addon_id),
-            "thumbnail":     thumbnail,
         })
 
     entries.sort(key=lambda e: e["id"].lower())

@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - '**/config.ini'
-      - '**/flag.png'
 
 permissions:
   contents: write
