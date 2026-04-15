@@ -1,0 +1,28 @@
+[
+    {
+        "id": "english",
+        "addon_type": "lang",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_link": "https://www.phpboost.com",
+        "creation_date": "2005/09/20",
+        "last_update": "2026/04/15",
+        "identifier": "uk",
+        "name": "English"
+    },
+    {
+        "id": "french",
+        "addon_type": "lang",
+        "compatibility": "6.1",
+        "version": "6.1.0",
+        "author": "PHPBoost",
+        "author_mail": "contact@phpboost.com",
+        "author_link": "https://www.phpboost.com",
+        "creation_date": "2005/09/20",
+        "last_update": "2026/04/15",
+        "identifier": "fr",
+        "name": "Français"
+    }
+]
